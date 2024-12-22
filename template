@@ -1,0 +1,6 @@
+#!/bin/bash
+echo -e "Please provide filename you want to create: \c"
+read -r file
+sudo touch /usr/local/bin/scripts/$file.sh
+sudo chmod 777 /usr/local/bin/scripts/$file.sh
+sudo echo 'This is demo script created through template script' >> /usr/local/bin/scripts.$file.sh

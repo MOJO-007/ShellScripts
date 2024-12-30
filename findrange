@@ -1,0 +1,5 @@
+#!/bin/bash
+read -p "Enter the start value: " start
+read -p "Enter the end Value: " end
+sort -t ',' -k2 -n names.csv | sed -n "$((start+1)),$((end+1))p"
+
